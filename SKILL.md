@@ -58,9 +58,13 @@ Treat the first folder below a status folder as the paper's topic. Files outside
    - Keep it static and portable: plain HTML/CSS/JS is preferred.
    - Make the first screen the actual dashboard, not a landing page.
    - Keep the design simple, scannable, and informative.
+   - If a generated cover image is used, present it as a full-width page cover similar to a Notion page cover: no card, no inset border, no bezel, and no padding above it. Put the dashboard title and metrics below the cover.
+   - Prefer relationship visuals that explain the library. Avoid large decorative hub-and-spoke graphs that only show topic counts.
+   - For a theme graph, connect themes only when local papers bridge multiple themes. Use edge weight to show shared-paper count, node size to show theme coverage, and node color or annotation to show dominant reading status.
    - Include:
      - status counts
      - topic/theme coverage
+     - relationship map or overlap view showing how research areas connect
      - likely knowledge areas
      - active reading threads
      - future gaps
