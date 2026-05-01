@@ -1,6 +1,15 @@
 # Generated website output from running the skill.
 site/
 
+# On-demand helper code created by an agent while running the skill.
+scripts/
+
+# Optional generated visual assets for local dashboards.
+generated-assets/
+
+# Local run history/cache for dashboard metrics.
+.research-map/
+
 # Python runtime artifacts.
 __pycache__/
 *.py[cod]
