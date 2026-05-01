@@ -1,0 +1,9 @@
+# Generated website output from running the skill.
+site/
+
+# Python runtime artifacts.
+__pycache__/
+*.py[cod]
+
+# macOS filesystem metadata.
+.DS_Store
