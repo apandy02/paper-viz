@@ -58,13 +58,20 @@ Treat the first folder below a status folder as the paper's topic. Files outside
    - Keep it static and portable: plain HTML/CSS/JS is preferred.
    - Make the first screen the actual dashboard, not a landing page.
    - Keep the design simple, scannable, and informative.
-   - If a generated cover image is used, present it as a full-width page cover similar to a Notion page cover: no card, no inset border, no bezel, and no padding above it. Put the dashboard title and metrics below the cover.
+   - Generate a cover image with the `imagegen` skill whenever image generation is available. The cover should be a wide, immersive bitmap image based on the inferred center of gravity of the library. For this research-map use case, prompt it as a Notion-style page cover showing a utopian future as imagined by a reader whose paper list centers on the observed themes, such as embodied AI, robotics, world models, vision, video/temporal reasoning, generative models, evaluation, and AI governance. Do not include text, logos, watermarks, frames, device mockups, UI chrome, borders, or bezels in the image.
+   - Store generated cover assets in a gitignored generated-assets directory, copy the selected final asset into the project, and reference that local file from the generated site. Never reference an image that only exists in the default image-generation output location.
+   - Present the cover as a full-width page cover similar to a Notion page cover: no card, no inset border, no bezel, no overlay panel, and no padding above it. Put the dashboard title and metrics below the cover, not on top of it.
    - Prefer relationship visuals that explain the library. Avoid large decorative hub-and-spoke graphs that only show topic counts.
    - For a theme graph, connect themes only when local papers bridge multiple themes. Use edge weight to show shared-paper count, node size to show theme coverage, and node color or annotation to show dominant reading status.
+   - The theme graph section should pair the graph with a concise interpretation of the graph: strongest bridges, central themes, what the graph suggests about the library's research direction, and which local papers support those observations.
+   - Give dense relationship maps enough horizontal space for their labels. If a side-by-side summary would make the map or legend feel cramped, put the interpretation below the graph instead.
+   - Use legends with readable labels in all layouts. Prefer small swatches or icons beside text over text placed inside colored blocks, and verify color contrast before finishing.
+   - Do not place status/progress coverage lists next to the graph. Put progress, topic coverage, aging, and burndown in separate dedicated sections.
    - Include:
      - status counts
      - topic/theme coverage
      - relationship map or overlap view showing how research areas connect
+     - graph summary grounded in bridge edges and supporting paper titles
      - likely knowledge areas
      - active reading threads
      - future gaps
@@ -78,6 +85,8 @@ Treat the first folder below a status folder as the paper's topic. Files outside
    - Confirm the generated page exists.
    - Confirm counts match the scanned library.
    - Confirm every insight is grounded in specific local papers.
+   - Confirm the cover image exists locally, is referenced by the site, and renders as a full-width cover without visible bezels, cards, borders, or padding above it.
+   - Confirm the graph section has enough room for labels, contains an explanatory summary rather than adjacent progress/status coverage controls, and uses a readable legend.
    - If the site uses JavaScript, make sure it still renders meaningful content without a build step.
 
 ## Implementation Notes
