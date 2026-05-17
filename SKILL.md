@@ -43,6 +43,10 @@ Treat the first folder below a status folder as the paper's topic. Files outside
 
 3. Produce synthesis.
    - Summarize the current center of gravity.
+   - Include a warm, opinionated "my read" or "what this suggests" section that says what the reading trail seems to reveal about the reader's underlying questions, taste, and research direction. This should feel like a thoughtful collaborator looking at the library, not a generic analytics summary.
+   - Make the interpretive section concrete: describe the intellectual arc from read papers to active papers to unread papers, name the specific local papers supporting each claim, and distinguish real evidence from inference.
+   - Give a clear point of view on the next few reads: which papers to finish first, which deepen the main spine, and which are useful context or side quests. Tie each recommendation to the apparent research direction.
+   - Keep the interpretive section elegant and compact. Prefer a short editorial note, a small arc/timeline, and terse next-read groups over bulky cards or long comma-heavy title dumps.
    - Identify likely knowledge areas backed by read papers.
    - Identify active threads backed by in-progress papers.
    - Identify gaps where unread papers outnumber read papers.
@@ -70,6 +74,7 @@ Treat the first folder below a status folder as the paper's topic. Files outside
    - Include:
      - status counts
      - topic/theme coverage
+     - a soulful interpretive reading of the library's apparent research arc and taste
      - relationship map or overlap view showing how research areas connect
      - graph summary grounded in bridge edges and supporting paper titles
      - likely knowledge areas
